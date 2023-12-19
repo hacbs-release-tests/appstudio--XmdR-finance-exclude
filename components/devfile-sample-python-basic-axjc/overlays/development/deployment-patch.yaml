@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-axjc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-jeol-tenant/appstudio/devfile-sample-python-basic-axjc@sha256:c679434475007963825a112c2fb657c1837224983757716f11d1cb6fc50739d2
+        name: my-python
+        resources: {}
+status: {}
