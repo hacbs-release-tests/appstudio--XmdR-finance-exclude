@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-cctq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-jeol-tenant/appstudio/dc-metro-map-cctq@sha256:a1929f58c98de8b12c704bf675a66fc95bbb38c4b6dc8b17fe63a138ba06be83
+        name: my-nodejs
+        resources: {}
+status: {}
